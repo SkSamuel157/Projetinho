@@ -6,8 +6,7 @@ let ganhador = -1;
 
 function jogar(escolha) {
     jogadorEscolha = escolha;
-    computadorEscolha = Math.floor(Math.random() * (3 -  + 1 ))+1;
-
+    computadorEscolha = Math.floor(Math.random() * (3- 1 +1 )) +1;
     /* PEDRA = 1        EU = 1
      PAPEL = 2          COMPUT. = 2
      TESOURA = 3        EMPATE = 0 */
@@ -47,7 +46,7 @@ function jogar(escolha) {
     document.getElementById('computadorEscolha3').classList.remove('selecionado');
 
     document.getElementById('jogadorEscolha' + jogadorEscolha).classList.add('selecionado');
-    document.getElementById('computadorEscolha' + jogadorEscolha).classList.add('selecionado');
+    document.getElementById('computadorEscolha' + computadorEscolha).classList.add('selecionado');
 
     if (ganhador == 0) {
         document.getElementById('mensagem').innerHTML = "EMPATE"
