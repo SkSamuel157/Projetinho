@@ -1,0 +1,11 @@
+ul#jogadorEscolha li a,
+ul#computadorEscolha li a {
+    opacity: 0.2;
+    transition: ease-in-out 0.3s;
+}
+
+ul#jogadorEscolha li a:hover,
+ul#jogadorEscolha li a.selecionado,
+ul#computadorEscolha li a.selecionado {
+    opacity: 1;
+}

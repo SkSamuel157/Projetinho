@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pedra Papel e Tesoura</title>
+</head>
+
+<body>
+    <div id="principal">
+        <h1 id="titulo">JO-KEN-PO</h1>
+        <div id="placar">
+            <div id="jogador">
+                <h2 id="jogadorNome">Samuel</h2>
+                <p id="jogadorPontos"></p>
+                <ul id="jogadorEscolha">
+                    <li>
+                        <a id="jogadorEscolha1" onclick="jogar(1)">
+                            <img src="img/Pedra.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a id="jogadorEscolha2" onclick="jogar(2)">
+                            <img src="img/Papel.jpg" alt=""></a>
+                    </li>
+                    <li>
+                        <a id="jogadorEscolha3" onclick="jogar(3)">
+                            <img src="img/Tesoura.png" alt=""></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="versus">Vs</div>
+            <div id="computador">
+                <h2 id="computadorNome">WWE</h2>
+                <p id="computadorPontos">0</p>
+                <ul id="computadorEscolha">
+                    <li>
+                        <a id="computadorEscolha1">
+                            <img src="img/Pedra.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="computadorEscolha2">
+                            <img src="img/Papel.jpg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a id="computadorEscolha3">
+                            <img src="img/Tesoura.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="mensagem">&nbsp;</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
