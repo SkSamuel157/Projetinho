@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(pink, purple);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            font: 300 24px 'Poppins', sans-serif;
+            padding: 10px 20px;
+            width: 150px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: ease-in-out 0.3s;
+            margin: 0 100px 0 100px;
+        }
+
+        .tituloPrincipal {
+            font: 700 32px 'Poppins', sans-serif;
+        }
+
+        .titulo {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .botoes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 30px 0;
+        }
+
+        .botaoS,
+        .botaoN {
+            margin: 10px;
+        }
+
+        .image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .image img {
+            width: 20%;
+            height: auto;
+        }
+
+        @media (min-width: 768px) {
+            .botoes {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .btn {
+                font-size: 40px;
+                padding: 15px 30px;
+                width: 200px;
+            }
+
+            .tituloPrincipal {
+                font-size: 40px;
+            }
+
+            .titulo {
+                margin: 50px 0;
+            }
+        }
+    </style>
+    <script>
+        function sim() {
+            location.href = "https://open.spotify.com/lyrics"
+        }
+        function esquivo(btn) {
+            btn.style.position = 'absolute';
+            btn.style.bottom = posicao(10, 80);
+            btn.style.left = posicao(10, 80);
+        }
+        function posicao(min, max) {
+            return (Math.random() * (max - min + min)) + "%"
+        }
+    </script>
+</head>
+
+<body>
+    <div class="titulo">
+        <h1 class="tituloPrincipal">
+            Vamo Ficar?
+        </h1>
+    </div>
+    <div class="botoes">
+        <div class="botaoS">
+            <button class="btn" onclick="sim()">SIM</button>
+        </div>
+        <div class="botaoN">
+            <button class="btn" onclick="esquivo(this)" onmouseover="esquivo(this)">NÃO</button>
+        </div>
+    </div>
+    <div class="image">
+        <img src="8864305.png">
+    </div>
+</body>
+
+</html>
